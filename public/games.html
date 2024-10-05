@@ -1,47 +1,150 @@
 <!DOCTYPE html>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-		<link rel="icon" href="image_6483441-removebg-preview.png">
-<html>
-	<main>
-		<div class="back">
-            <a href="/index.html">home</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radar Games</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="image_6483441-removebg-preview.png" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #2b2a33;
+        background-image: url("images/AffectionateDesertedGoa-max-1mb.gif");
+        color: #7ee3fa;
+        margin: 0;
+        padding: 20px; /* Add padding for better spacing */
+        text-align: center;
+      }
+      .game-container {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        background-color: #d8bfd8; /* Light purple */
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        margin: 20px; /* Space between games */
+      }
+      .game-title {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        font-size: 24px;
+        font-weight: bold;
+        color: black; /* Set game title color to black */
+      }
+      .play-button {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: black; /* Button color changed to black */
+        border: none;
+        color: white; /* Button text color */
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .play-button:hover {
+        background-color: #483d8b; /* Darker shade on hover */
+      }
+      button {
+        height: 56px;
+        color: #7ee3fa;
+        font-size: 14px;
+        border-radius: 10px;
+        background: #2b2a33;
+        border: 1px solid #7ee3fa;
+        transition: 0.5s;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back">
+      <a href="/index.html">home</a>
     </div>
-	<head>
-		<!--
-			Simple Unblocker Public
-		-->
-		<style>
-			body {
-			background-color: #2b2a33;
-			background-image: url("images/AffectionateDesertedGoa-max-1mb.gif");
-			color: #7ee3fa;
-			font-family: 'Courier New', Courier, monospace;
-			font-size: 200%;
-			}
-		</style>
-	</head>
-    <body>
-	    <style>
-		button {height: 56px;
-    color: #7ee3fa;
-    font-size: 14px;
-    border-radius: 10px;
-    background: #2b2a33;
-    border: 1px solid #7ee3fa;
-    font-family: 'Courier New', Courier, monospace;
-    border-color: #7ee3fa;
-    border-width: 1px;
-    transition: 0.5s;
-    padding: 10px;}
-	</style>
 
-	    <title>DM unblocker</title>
-		<center>
-			<br><br><br><br><br>
-			<h4>Games are never coming. Most likley the case, anyway.</h4>
-		</center>
-	</body>
-</main>
+    <div class="game-container">
+      <div class="game-title">Madalin Stuntcars 2</div>
+      <button class="play-button" onclick="playMadalin()">Play</button>
+    </div>
+
+    <div class="game-container">
+      <div class="game-title">Bitlife</div>
+      <button class="play-button" onclick="playBitlife()">Play</button>
+    </div>
+
+    <div class="game-container">
+      <div class="game-title">Slope</div>
+      <button class="play-button" onclick="playSlope()">Play</button>
+    </div>
+
+    <div class="game-container">
+      <div class="game-title">DriftHunters</div>
+      <button class="play-button" onclick="playDriftHunters()">Play</button>
+    </div>
+
+    <div class="game-container">
+      <div class="game-title">Baldi's Basics</div>
+      <button class="play-button" onclick="playBaldi()">Play</button>
+    </div>
+
+    <div class="game-container">
+      <div class="game-title">Rooftop Snipers</div>
+      <button class="play-button" onclick="playRooftopSnipers()">Play</button>
+    </div>
+
+    <div class="game-container">
+      <div class="game-title">Cookie Clicker</div>
+      <button class="play-button" onclick="playCookieClicker()">Play</button>
+    </div>
+
+    <h4>more soon</h4>
+
+    <script>
+      function playMadalin() {
+        window.location.href =
+          "http://radar.network.icmatch.com/gamefiles/stuntcars2/index.html"; // Redirect to Madalin Stuntcars 2
+      }
+
+      function playBitlife() {
+        window.location.href =
+          "http://radar.network.icmatch.com/gamefiles/bit-life/"; // Redirect to Bitlife
+      }
+
+      function playSlope() {
+        window.location.href =
+          "http://radar.network.icmatch.com/gamefiles/slopelocal/"; // Redirect to Slope
+      }
+
+      function playDriftHunters() {
+        window.location.href =
+          "http://radar.network.icmatch.com/gamefiles/drifthunters/index.html"; // Redirect to DriftHunters
+      }
+
+      function playBaldi() {
+        window.location.href =
+          "http://radar.network.icmatch.com/gamefiles/baldibasic/"; // Redirect to Baldi's Basics
+      }
+
+      function playRooftopSnipers() {
+        window.location.href =
+          "http://radar.network.icmatch.com/gamefiles/rooftopsnipers/"; // Redirect to Rooftop Snipers
+      }
+
+      function playCookieClicker() {
+        window.location.href =
+          "http://radar.network.icmatch.com/gamefiles/gamebatch1/cookieclicker/"; // Redirect to Cookie Clicker
+      }
+    </script>
+  </body>
 </html>
